@@ -6,7 +6,7 @@ const bodyParser = require('body-parser') //intilize body parser can read post r
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-const serverless = require('serverless-http')
+
 
 //intilize mongoose
 const mongoose = require('mongoose')
@@ -26,7 +26,7 @@ mongoose.connect(mongoDBpath).then(
     }
 )
 
-// module.exports.handler = serverless(app);
+
 
 const PORT = process.env.PORT || 5000;
 //port no
